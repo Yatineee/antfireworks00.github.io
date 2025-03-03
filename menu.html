@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu01</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style01.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html">
+                <img src="images/logoo.png" alt="Logo" width="100" height="40">
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="index copy.html">Home</a></li>
+                <li><a href="menu01.html">Another Menu</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Bookmarks (Categories) -->
+    <div class="bookmarks">
+        <a href="#category1" class="bookmark active">Firecrackers</a>
+        <a href="#category2" class="bookmark">Spinner & Wheels</a>
+        <a href="#category3" class="bookmark">Novelties</a>
+        <a href="#category4" class="bookmark">ICE Fountain & Smoke</a>
+        <a href="#category5" class="bookmark">Roman Candles</a>
+        <a href="#category6" class="bookmark">Rockets & Fountains</a>
+        <a href="#category7" class="bookmark">Consumer Cakes</a>
+        <a href="#category8" class="bookmark">Display Cakes</a>
+    </div>
+
+    <!-- PPT-like Page Turning Content -->
+    <div class="slider">
+        <!-- Category 1 -->
+        <div id="category1" class="category active">
+            <div class="slide active">
+                <img src="FLOURISH FIREWORKS/1-2P-Photoroom.png" alt="Slide 1-1">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/3-4P-Photoroom.png" alt="Slide 1-2">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/5-6P-Photoroom.png" alt="Slide 1-3">
+            </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div id="category2" class="category">
+            <div class="slide active">
+                <img src="FLOURISH FIREWORKS/7-8P-Photoroom.png" alt="Slide 2-1">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/9-10P-Photoroom.png" alt="Slide 2-2">
+            </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div id="category3" class="category">
+            <div class="slide active">
+                <img src="FLOURISH FIREWORKS/11-12P-Photoroom.jpg" alt="Slide 3-1">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/13-14P-Photoroom.png" alt="Slide 3-2">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/15-16P-Photoroom.png" alt="Slide 3-3">
+            </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div id="category4" class="category">
+            <div class="slide active">
+                <img src="FLOURISH FIREWORKS/13-14P-Photoroom.png" alt="Slide 4-1">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/15-16P-Photoroom.png" alt="Slide 4-2">
+            </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div id="category5" class="category">
+            <div class="slide active">
+                <img src="FLOURISH FIREWORKS/17-18P-Photoroom.png" alt="Slide 5-1">
+            </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div id="category6" class="category">
+            <div class="slide active">
+                <img src="FLOURISH FIREWORKS/19-20P-Photoroom.png" alt="Slide 6-1">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/21-22P-Photoroom.png" alt="Slide 6-1">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/23-24p-Photoroom.png" alt="Slide 6-2">
+            </div>
+        </div>
+
+        <!-- Category 7 -->
+        <div id="category7" class="category">
+            <div class="slide active">
+                <img src="FLOURISH FIREWORKS/25-26P-Photoroom.png" alt="Slide 7-1">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/27-28p-Photoroom.png" alt="Slide 7-2">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/29-30p-Photoroom.png" alt="Slide 7-3">
+            </div>
+        </div>
+
+        <!-- Category 8 -->
+        <div id="category8" class="category">
+            <div class="slide active">
+                <img src="FLOURISH FIREWORKS/31-32p-Photoroom.png" alt="Slide 8-1">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/33-34p-Photoroom.png" alt="Slide 8-2">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/35-36p-Photoroom.png" alt="Slide 8-3">
+            </div>
+            <div class="slide">
+                <img src="FLOURISH FIREWORKS/37-38p-Photoroom.png" alt="Slide 8-4">
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Page Turning Buttons -->
+    <div class="controls">
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--鼠标特效-->
+<script src="https://blog-static.cnblogs.com/files/zouwangblog/mouse-click.js"></script>
+<!-- <script src="https://blog.fhmv.com/wp-content/plugins/wzbaibaoxiang/js/vsclick.min.js?ver=6.4.4" id="vsclick-js" defer></script> -->
+<div width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></div>
+<!--鼠标特效 end-->

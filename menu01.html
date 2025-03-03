@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu01</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style01.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html">
+                <img src="images/logoo.png" alt="Logo" width="100" height="40">
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="index copy.html">Home</a></li>
+                <li><a href="menu.html">Another Menu</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Bookmarks (Categories) -->
+    <div class="bookmarks">
+        <a href="#category1" class="bookmark active">Firecrackers</a>
+        <a href="#category2" class="bookmark">Ground Spinner & Helicopters</a>
+        <a href="#category3" class="bookmark">Sparklers & Roman Candles & Missiles</a>
+        <a href="#category4" class="bookmark">Fountains & Toys & Noverlties</a>
+        <a href="#category5" class="bookmark">ICE & Stage Fireworks</a>
+        <a href="#category6" class="bookmark">Cakes and Display Fireworks</a>
+    </div>
+
+    <!-- PPT-like Page Turning Content -->
+    <div class="slider">
+        <!-- Category 1 -->
+        <div id="category1" class="category active">
+            <div class="slide active">
+                <img src="Menu01\P1-P2.jpg" alt="Slide 1-1">
+            </div>
+            <div class="slide">
+                <img src="Menu01\P3-P4.jpg" alt="Slide 1-2">
+            </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div id="category2" class="category">
+            <div class="slide active">
+                <img src="Menu01\P5-P6.jpg" alt="Slide 2-1">
+            </div>
+            <div class="slide">
+                <img src="Menu01\P7-P8.jpg" alt="Slide 2-2">
+            </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div id="category3" class="category">
+            <div class="slide active">
+                <img src="Menu01\P9-P10.jpg" alt="Slide 3-1">
+            </div>
+            <div class="slide">
+                <img src="Menu01\P11-P12.jpg" alt="Slide 3-2">
+            </div>
+            <div class="slide">
+                <img src="Menu01\P13-P14.jpg" alt="Slide 3-3">
+            </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div id="category4" class="category">
+            <div class="slide active">
+                <img src="Menu01\P15-P16.jpg" alt="Slide 4-1">
+            </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div id="category5" class="category">
+            <div class="slide active">
+                <img src="Menu01\P17-P18.jpg" alt="Slide 5-1">
+            </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div id="category6" class="category">
+            <div class="slide active">
+                <img src="Menu01\P19-P20.jpg" alt="Slide 6-1">
+            </div>
+            <div class="slide">
+                <img src="Menu01\P21-P22.jpg" alt="Slide 6-2">
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Page Turning Buttons -->
+    <div class="controls">
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!--鼠标特效-->
+<script src="https://blog-static.cnblogs.com/files/zouwangblog/mouse-click.js"></script>
+<!-- <script src="https://blog.fhmv.com/wp-content/plugins/wzbaibaoxiang/js/vsclick.min.js?ver=6.4.4" id="vsclick-js" defer></script> -->
+<div width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></div>
+<!--鼠标特效 end-->

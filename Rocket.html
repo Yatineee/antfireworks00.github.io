@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | ANT Fireworks Co.</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // function likeProduct(button, productId) {
+        //     let badge = button.nextElementSibling;
+        //     let currentLikes = parseInt(badge.textContent);
+            
+        //     fetch('/api/like', {
+        //         method: 'POST',
+        //         headers: {
+        //             'Content-Type': 'application/json'
+        //         },
+        //         body: JSON.stringify({ productId: productId })
+        //     })
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         if (data.success) {
+        //             badge.textContent = currentLikes + 1;
+        //         } else {
+        //             console.error('Failed to update likes.');
+        //         }
+        //     });
+        // }
+        function likeProduct(button) {
+            let badge = button.nextElementSibling;
+            let currentLikes = parseInt(badge.textContent);
+            badge.textContent = currentLikes + 1;
+
+            // 添加动画类
+            badge.classList.add('animate');
+
+            // 在动画完成后移除类
+            setTimeout(() => {
+                badge.classList.remove('animate');
+            }, 200); // 动画时间与CSS中的transition时间保持一致
+        }
+
+    </script>
+    <style>
+        .custom-badge {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            margin-left: 8px;
+            transition: transform 0.2s ease-in-out; /* 添加平滑的过渡效果 */
+        }
+
+        .custom-badge.animate {
+            transform: scale(1.2); /* 数字增大 */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Fireworks Co.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="safety.html">Safety</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Rocket</h1>
+        <p>At Fireworks Co., we offer a wide range of fireworks products suitable for various occasions. Browse our selection below:</p>
+        
+        <!-- AT200List -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/1.jpg" class="card-img-top" alt="AT2001">
+                    <div class="card-body">
+                        <p class="card-text">AT2001</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/2.jpg" class="card-img-top" alt="AT2002">
+                    <div class="card-body">
+                        <p class="card-text">AT2002</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/3.jpg" class="card-img-top" alt="AT2003">
+                    <div class="card-body">
+                        <p class="card-text">AT2003</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/4.jpg" class="card-img-top" alt="AT2004">
+                    <div class="card-body">
+                        <p class="card-text">AT2004</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/5.jpg" class="card-img-top" alt="AT2005">
+                    <div class="card-body">
+                        <p class="card-text">AT2005</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="likeProduct(this)">👍 thumb</button>
+                                <span class="custom-badge">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/6.jpg" class="card-img-top" alt="AT2006">
+                    <div class="card-body">
+                        <p class="card-text">AT2006</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/7.jpg" class="card-img-top" alt="AT2007">
+                    <div class="card-body">
+                        <p class="card-text">AT2007</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/8.jpg" class="card-img-top" alt="AT2008">
+                    <div class="card-body">
+                        <p class="card-text">AT2008</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/9.jpg" class="card-img-top" alt="AT2009">
+                    <div class="card-body">
+                        <p class="card-text">AT2009</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/10.jpg" class="card-img-top" alt="AT20010">
+                    <div class="card-body">
+                        <p class="card-text">AT20010</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/11.jpg" class="card-img-top" alt="AT20011">
+                    <div class="card-body">
+                        <p class="card-text">AT20011</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/12.jpg" class="card-img-top" alt="AT20012">
+                    <div class="card-body">
+                        <p class="card-text">AT20012</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="./Rocket/13.jpg" class="card-img-top" alt="AT20013">
+                    <div class="card-body">
+                        <p class="card-text">AT20013</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--鼠标特效-->
+<script src="https://blog-static.cnblogs.com/files/zouwangblog/mouse-click.js"></script>
+<div width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></div>
+<!--鼠标特效 end-->
+</body>
+</html>
